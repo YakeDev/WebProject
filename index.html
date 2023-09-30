@@ -29,10 +29,60 @@
     </header>
     <section class="content">
       <div class="row">
-        <div id="exerc-01">
+        <!-- Jour et l'heure actuels -->
+        <div id="exerc-01" class="exerc-container">
           <h2>Jour et l'heure actuels</h2>
           <p>Aujourd'hui, c'est : <span id="day"></span></p>
           <p>L'heure actuelle est : <span id="current-time"></span></p>
+        </div>
+        <!-- Print this page -->
+        <div id="exerc-02" class="exerc-container">
+          <h2>Print this page</h2>
+          <input
+            type="button"
+            value="Imprimer"
+            id="printBtn"
+            class="btn-default"
+          />
+        </div>
+        <!-- Calcul Multiplication-division -->
+        <div id="exrc-03" class="exerc-container">
+          <h2 class="exerc-title">Calcul Multiplication-division</h2>
+          <div class="container-mult-div">
+            <div class="number-container">
+              <form action="">
+                <input
+                  class="nb"
+                  type="text"
+                  name="nb1"
+                  id="nb1"
+                  placeholder="Number 1"
+                />
+                <input
+                  class="nb"
+                  type="text"
+                  name="nb2"
+                  id="nb2"
+                  placeholder="Number 2"
+                />
+                <p>Le resultat est: <span id="resultat"></span></p>
+                <div class="btn-container">
+                  <input
+                    type="button"
+                    value="Multiplication"
+                    class="btn-default"
+                    id="multiplication"
+                  />
+                  <input
+                    type="button"
+                    value="Division"
+                    class="btn-default"
+                    id="division"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>

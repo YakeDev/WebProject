@@ -25,3 +25,45 @@ function currentDayTime() {
   heure.innerHTML = `${hour} ${AmPm} : ${min} : ${sec}`;
 }
 currentDayTime();
+
+//Print Current page
+
+const printBtn = document.getElementById("printBtn");
+printBtn.addEventListener("click", function () {
+  window.print();
+});
+
+//Multiplication-division
+const multiplication = document.getElementById("multiplication");
+const division = document.getElementById("division");
+
+function recupererHtml() {}
+
+function initialiser() {
+  resultat.innerHTML = 0;
+}
+
+multiplication.addEventListener("click", function () {
+  const nb1 = document.getElementById("nb1").value;
+  const nb2 = document.getElementById("nb2").value;
+  const resultat = document.getElementById("resultat");
+
+  if (nb1 != "" && nb2 != "") {
+    resultat.innerHTML = nb1 * nb2;
+  } else {
+    resultat.innerHTML = "Veuillez saisir deux nombres";
+    resultat.style.color = "red";
+  }
+});
+division.addEventListener("click", function () {
+  const nb1 = document.getElementById("nb1").value;
+  const nb2 = document.getElementById("nb2").value;
+  const resultat = document.getElementById("resultat");
+
+  if (nb1 != "" && nb2 != "") {
+    resultat.innerHTML = nb1 / nb2;
+  } else {
+    resultat.innerHTML = "Veuillez saisir deux nombres";
+    resultat.style.color = "red";
+  }
+});
